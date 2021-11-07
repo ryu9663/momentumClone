@@ -1,0 +1,110 @@
+body,input,textarea{margin:0;;font-size:100%;
+  /* text-shadow:5px 5px 10px rgb(58, 58, 58); */
+color:#fff
+}
+
+.hidden {
+  display:none;
+}
+img{
+    position: fixed;
+    min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+    top: 0; left: 0;
+    z-index: -1;
+    filter: brightness(90%);
+}
+
+#weather{display:grid;
+      grid-template-columns:1fr 1fr;
+      text-decoration: none;}
+      #kk{border-right:0px;}
+      #right{text-align : right; vertical-align: top;}
+      span{margin-right: 20px;}
+
+#logout-button{background-color: skyblue;
+    background-image: none !important;
+    border-color: transparent;
+    border: none;
+    color: #FFFFFF;
+
+    text-align : left; vertical-align: top;
+}
+
+
+#clock{
+  text-align : center;
+  font-size:160px;
+  margin:auto;
+  width:60%;
+  padding:10px;
+  /* border:1px solid gray; */
+}
+@media screen and (max-width: 900px) {
+        #clock {
+          font-size:40px;
+        }
+      }
+@media screen and (max-height:700px){
+  #login-form,#greeting,#todo-form,#todo-list{
+    font-size:30px;
+  }
+  #clock {
+    font-size:80px;
+  }
+  #quote{
+    margin-top:50px !important;
+    font-size:20px;
+  }
+}
+
+
+
+
+#login-form,#greeting,#todo-form,#todo-list{
+  text-align : center;
+  font-size:180%;
+  margin:auto;
+  width:60%;
+  padding:10px;
+  /* border:1px solid gray; */
+}
+#quote{font-size:20px;
+text-align: center;
+vertical-align: bottom;
+margin:80px;
+color:white !important;
+
+position: static;
+}
+
+input[type = text]{text-align:center;
+background-color: transparent !important;
+color: white !important;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  　
+  　border-bottom-color:black;
+
+  }
+
+  input::placeholder{
+    color:white;
+  }
+
+#todo-list li{
+  list-style-position: inside;
+    list-style-type: none;
+}
+
+li button{
+  background-color: transparent !important;
+      background-image: none !important;
+      border-color: transparent;
+      border: gray 1px solid;
+      color: #FFFFFF;
